@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the GCFSI Knowledge Platform Home feature.
+ */
+
+include_once 'gcfsikno_home.features.inc';
