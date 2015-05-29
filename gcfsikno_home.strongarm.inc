@@ -63,14 +63,14 @@ function gcfsikno_home_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'shunneso@msu.edu';
+  $strongarm->value = 'test@test.com';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'GCFSI Knowledge';
+  $strongarm->value = 'test';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -194,14 +194,14 @@ function gcfsikno_home_strongarm() {
   $strongarm->name = 'theme_spartan_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
-    'toggle_name' => 1,
+    'toggle_name' => 0,
     'toggle_slogan' => 1,
     'toggle_node_user_picture' => 1,
     'toggle_comment_user_picture' => 1,
-    'toggle_comment_user_verification' => 1,
+    'toggle_comment_user_verification' => 0,
     'toggle_favicon' => 1,
     'toggle_main_menu' => 1,
-    'toggle_secondary_menu' => 1,
+    'toggle_secondary_menu' => 0,
     'default_logo' => 1,
     'logo_path' => '',
     'logo_upload' => '',
@@ -221,9 +221,6 @@ function gcfsikno_home_strongarm() {
     'bootstrap_region_well-footer' => '',
     'bootstrap_region_well-page_top' => '',
     'bootstrap_region_well-page_bottom' => '',
-    'bootstrap_region_well-dashboard_main' => '',
-    'bootstrap_region_well-dashboard_sidebar' => '',
-    'bootstrap_region_well-dashboard_inactive' => '',
     'bootstrap_anchors_fix' => 1,
     'bootstrap_anchors_smooth_scrolling' => 1,
     'bootstrap_popover_enabled' => 1,

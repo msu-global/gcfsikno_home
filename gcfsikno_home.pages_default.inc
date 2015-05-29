@@ -66,6 +66,8 @@ function gcfsikno_home_default_page_manager_pages() {
       'upper_middle' => NULL,
       'upper_right' => NULL,
       'break' => NULL,
+      'upper_middle_left' => NULL,
+      'upper_middle_right' => NULL,
     ),
   );
   $display->cache = array();
@@ -159,8 +161,8 @@ function gcfsikno_home_default_page_manager_pages() {
     $display->content['new-6686c23e-f12c-489e-8cfc-905fa2503d07'] = $pane;
     $display->panels['upper_left'][0] = 'new-6686c23e-f12c-489e-8cfc-905fa2503d07';
     $pane = new stdClass();
-    $pane->pid = 'new-1abb2c43-e589-4829-8b50-2154b80537ca';
-    $pane->panel = 'upper_middle';
+    $pane->pid = 'new-c8ac3a39-43b8-49dc-9bf2-8ddd8595ac50';
+    $pane->panel = 'upper_middle_left';
     $pane->type = 'spartan_html';
     $pane->subtype = 'spartan_html';
     $pane->shown = TRUE;
@@ -179,12 +181,12 @@ function gcfsikno_home_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '1abb2c43-e589-4829-8b50-2154b80537ca';
-    $display->content['new-1abb2c43-e589-4829-8b50-2154b80537ca'] = $pane;
-    $display->panels['upper_middle'][0] = 'new-1abb2c43-e589-4829-8b50-2154b80537ca';
+    $pane->uuid = 'c8ac3a39-43b8-49dc-9bf2-8ddd8595ac50';
+    $display->content['new-c8ac3a39-43b8-49dc-9bf2-8ddd8595ac50'] = $pane;
+    $display->panels['upper_middle_left'][0] = 'new-c8ac3a39-43b8-49dc-9bf2-8ddd8595ac50';
     $pane = new stdClass();
     $pane->pid = 'new-e5b967bb-fa23-464d-a117-0fff4f29a623';
-    $pane->panel = 'upper_right';
+    $pane->panel = 'upper_middle_right';
     $pane->type = 'spartan_html';
     $pane->subtype = 'spartan_html';
     $pane->shown = TRUE;
@@ -205,7 +207,31 @@ function gcfsikno_home_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'e5b967bb-fa23-464d-a117-0fff4f29a623';
     $display->content['new-e5b967bb-fa23-464d-a117-0fff4f29a623'] = $pane;
-    $display->panels['upper_right'][0] = 'new-e5b967bb-fa23-464d-a117-0fff4f29a623';
+    $display->panels['upper_middle_right'][0] = 'new-e5b967bb-fa23-464d-a117-0fff4f29a623';
+    $pane = new stdClass();
+    $pane->pid = 'new-ca5b5d9f-c3a5-4754-a7f3-e54ad6553cd0';
+    $pane->panel = 'upper_right';
+    $pane->type = 'spartan_html';
+    $pane->subtype = 'spartan_html';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'html' => 'services',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'ca5b5d9f-c3a5-4754-a7f3-e54ad6553cd0';
+    $display->content['new-ca5b5d9f-c3a5-4754-a7f3-e54ad6553cd0'] = $pane;
+    $display->panels['upper_right'][0] = 'new-ca5b5d9f-c3a5-4754-a7f3-e54ad6553cd0';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
