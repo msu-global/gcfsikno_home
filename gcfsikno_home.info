@@ -22,6 +22,7 @@ features[features_api][] = api:2
 features[menu_custom][] = main-menu
 features[page_manager_pages][] = home
 features[panels_mini][] = global_footer
+features[variable][] = admin_theme
 features[variable][] = jquery_update_compression_type
 features[variable][] = jquery_update_jquery_admin_version
 features[variable][] = jquery_update_jquery_cdn

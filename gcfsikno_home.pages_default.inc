@@ -18,7 +18,7 @@ function gcfsikno_home_default_page_manager_pages() {
   $page->path = 'home';
   $page->access = array();
   $page->menu = array(
-    'type' => 'normal',
+    'type' => 'none',
     'title' => 'Home',
     'name' => 'main-menu',
     'weight' => '0',
