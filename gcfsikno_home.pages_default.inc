@@ -16,7 +16,10 @@ function gcfsikno_home_default_page_manager_pages() {
   $page->admin_title = 'Home';
   $page->admin_description = 'The home page for the GCFSI Knowledge Platform, which feature a full-width image, a blog posting, and login.';
   $page->path = 'home';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'none',
     'title' => 'Home',

@@ -72,6 +72,29 @@ function gcfsikno_home_default_panels_mini() {
     $display->content['new-8e7612b8-d9e3-4dab-838f-0c61e7ae5088'] = $pane;
     $display->panels['lower_left'][0] = 'new-8e7612b8-d9e3-4dab-838f-0c61e7ae5088';
     $pane = new stdClass();
+    $pane->pid = 'new-7acebe5d-ac8d-410e-b5e5-b1e9a7e6117f';
+    $pane->panel = 'lower_right';
+    $pane->type = 'block';
+    $pane->subtype = 'system-user-menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '7acebe5d-ac8d-410e-b5e5-b1e9a7e6117f';
+    $display->content['new-7acebe5d-ac8d-410e-b5e5-b1e9a7e6117f'] = $pane;
+    $display->panels['lower_right'][0] = 'new-7acebe5d-ac8d-410e-b5e5-b1e9a7e6117f';
+    $pane = new stdClass();
     $pane->pid = 'new-6ea1ac13-cb29-4d22-91ed-547da3354162';
     $pane->panel = 'upper_left';
     $pane->type = 'spartan_html';
