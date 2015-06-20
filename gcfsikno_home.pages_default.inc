@@ -242,6 +242,159 @@ function gcfsikno_home_default_page_manager_pages() {
   $page->default_handlers[$handler->name] = $handler;
   $pages['home'] = $page;
 
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
+  $page->name = 'services';
+  $page->task = 'page';
+  $page->admin_title = 'Services';
+  $page->admin_description = 'A promotional page that extols the benefits of the GCFSI Knowledge Platform web services, including connecting to other websites, providing a back-end for mobile apps, and integrating with legacy desktop apps.';
+  $page->path = 'services';
+  $page->access = array();
+  $page->menu = array();
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_services__panel_context_e8781819-ebc6-416a-92c5-b8283e4205da';
+  $handler->task = 'page';
+  $handler->subtask = 'services';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Panel',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+  );
+  $display = new panels_display();
+  $display->layout = 'spartan_threerow_hero';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'hero' => NULL,
+      'upper' => NULL,
+      'offset' => NULL,
+      'lower' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '3d4be4dc-94d0-4dd2-a173-631ed163d924';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-b58feaf5-0333-430e-a3c9-43a9d00a1019';
+    $pane->panel = 'hero';
+    $pane->type = 'spartan_html';
+    $pane->subtype = 'spartan_html';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'html' => 'services-hero',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'b58feaf5-0333-430e-a3c9-43a9d00a1019';
+    $display->content['new-b58feaf5-0333-430e-a3c9-43a9d00a1019'] = $pane;
+    $display->panels['hero'][0] = 'new-b58feaf5-0333-430e-a3c9-43a9d00a1019';
+    $pane = new stdClass();
+    $pane->pid = 'new-76df893f-3c61-470b-b973-869fcbd92f79';
+    $pane->panel = 'lower';
+    $pane->type = 'spartan_html';
+    $pane->subtype = 'spartan_html';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'html' => 'services-legacy',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '76df893f-3c61-470b-b973-869fcbd92f79';
+    $display->content['new-76df893f-3c61-470b-b973-869fcbd92f79'] = $pane;
+    $display->panels['lower'][0] = 'new-76df893f-3c61-470b-b973-869fcbd92f79';
+    $pane = new stdClass();
+    $pane->pid = 'new-fe402bcb-be3f-4687-8685-8c780bea9dcd';
+    $pane->panel = 'offset';
+    $pane->type = 'spartan_html';
+    $pane->subtype = 'spartan_html';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'html' => 'services-apps',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'fe402bcb-be3f-4687-8685-8c780bea9dcd';
+    $display->content['new-fe402bcb-be3f-4687-8685-8c780bea9dcd'] = $pane;
+    $display->panels['offset'][0] = 'new-fe402bcb-be3f-4687-8685-8c780bea9dcd';
+    $pane = new stdClass();
+    $pane->pid = 'new-ad174348-2dd9-4141-8498-e181bd25a072';
+    $pane->panel = 'upper';
+    $pane->type = 'spartan_html';
+    $pane->subtype = 'spartan_html';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'html' => 'services-websites',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'ad174348-2dd9-4141-8498-e181bd25a072';
+    $display->content['new-ad174348-2dd9-4141-8498-e181bd25a072'] = $pane;
+    $display->panels['upper'][0] = 'new-ad174348-2dd9-4141-8498-e181bd25a072';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-b58feaf5-0333-430e-a3c9-43a9d00a1019';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['services'] = $page;
+
   return $pages;
 
 }

@@ -21,6 +21,7 @@ features[ctools_custom_content][] = footer_right
 features[features_api][] = api:2
 features[menu_custom][] = main-menu
 features[page_manager_pages][] = home
+features[page_manager_pages][] = services
 features[panels_mini][] = global_footer
 features[variable][] = admin_theme
 features[variable][] = jquery_update_compression_type
